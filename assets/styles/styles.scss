@@ -10,7 +10,13 @@ a {
   text-decoration: none !important;
 }
 
+
+
 @import "./partials/colors";
 @import "./partials/header";
 @import "./partials/footer";
 @import "./partials/layout";
+
+body {
+  background-color: $omie-dark !important;
+}

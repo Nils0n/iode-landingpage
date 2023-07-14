@@ -43,4 +43,18 @@ footer .links-footer a {
 }
 .home section button {
   background-color: #000D16;
+}
+
+.about {
+  background-color: #00475d;
+  color: #ffffff;
+}
+
+.last-session {
+  background-color: #EAF8F9;
+  padding-top: 10rem;
+}
+
+body {
+  background-color: #000D16 !important;
 }/*# sourceMappingURL=styles.css.map */
