@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  background: #00e2f4;
+  color: #001e27;
+}
+header .title {
+  height: 1.875rem;
+}
+header .title h2 {
+  font-size: 0.875rem;
+}
+header a {
+  color: #001e27;
+}
+
+footer {
+  background-color: #001e27;
+  height: 25vh;
+}
+footer .links-footer a {
+  color: #F7F7F7;
+}/*# sourceMappingURL=styles.css.map */
