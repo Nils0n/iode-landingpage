@@ -30,4 +30,17 @@ footer {
 }
 footer .links-footer a {
   color: #F7F7F7;
+}
+
+.home {
+  background-color: #000D16;
+  height: 120vh;
+  color: #ffffff;
+}
+.home section {
+  background-color: #000D16;
+  margin-top: -1rem;
+}
+.home section button {
+  background-color: #000D16;
 }/*# sourceMappingURL=styles.css.map */
