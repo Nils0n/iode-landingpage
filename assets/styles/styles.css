@@ -26,7 +26,7 @@ header a {
 
 footer {
   background-color: #001e27;
-  height: 25vh;
+  height: 30vh;
 }
 footer .links-footer a {
   color: #F7F7F7;
@@ -41,18 +41,52 @@ footer .links-footer a {
   background-color: #000D16;
   margin-top: -1rem;
 }
-.home section button {
+.home button {
   background-color: #000D16;
 }
 
-.about {
-  background-color: #00475d;
+.indications {
   color: #ffffff;
 }
+.indications .about {
+  background-color: #00475d;
+}
 
-.last-session {
+.cards .carousel-item.card {
+  height: 30rem;
+}
+.cards .carousel-indicators button {
+  border-radius: 100%;
+  height: 0.6rem;
+  width: 1rem;
+  margin: 0 0.6rem;
+  background-color: #001e27;
+}
+.cards .carousel-indicators button.active {
+  background-color: #00e2f4;
+}
+
+.news .new-item:nth-child(1) {
+  background-image: url("../../../assets/images/banner-omiemidia.png");
+}
+
+.experts-word {
+  background-color: #ffffff;
+}
+.experts-word .img-midia {
+  transition: transform 0.3s;
+}
+.experts-word .img-midia:hover {
+  transform: scale(1.2);
+}
+
+.last-session, .cards {
   background-color: #EAF8F9;
-  padding-top: 10rem;
+}
+
+.cards, .experts-word {
+  width: 100%;
+  height: 100vh;
 }
 
 body {

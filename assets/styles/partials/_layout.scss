@@ -7,24 +7,68 @@
         background-color: $omie-dark;
         margin-top: -1rem;
         
+    }
+    
+    button{
+         background-color: $omie-dark;
+    }
+}
+
+.indications{
+    color: $omie-white;
+
+    .about{
+        background-color: $omie-bg-secondary;
+    }
+}
+
+.cards{
+    .carousel-item.card{
+        height: 30rem;
+    }
+
+    .carousel-indicators{
         button{
-             background-color: $omie-dark;
+            border-radius: 100%;
+            height: .6rem;
+            width: 1rem;
+            margin: 0 .6rem;
+            background-color: $omie-primary;
+            
+        }
+
+        button.active{
+            background-color: $omie-blue-header;
         }
     }
 }
 
-.about{
-    background-color: $omie-bg-secondary;
-    color: $omie-white;
+.news {
+    .new-item:nth-child(1){
+        background-image: url('../../../assets/images/banner-omiemidia.png');
+    }
 }
 
-.last-session{
+.experts-word{
+    background-color: $omie-white;
+
+    .img-midia{
+        transition: transform 0.3s;
+    }
+
+    .img-midia:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+.last-session, .cards{
     background-color: $omie-bg-gray;
-    padding-top: 10rem;
-
 }
 
 
-
-
+.cards, .experts-word{
+    width: 100%;
+    height: 100vh;
+}
 
