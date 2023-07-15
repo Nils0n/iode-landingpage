@@ -123,24 +123,19 @@ footer .links-footer a {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-
-.div1 {
+.grid-news .div1 {
   grid-area: 1/1/2/2;
 }
-
-.div2 {
+.grid-news .div2 {
   grid-area: 1/2/2/3;
 }
-
-.div3 {
+.grid-news .div3 {
   grid-area: 1/3/2/4;
 }
-
-.div4 {
+.grid-news .div4 {
   grid-area: 2/2/3/3;
 }
-
-.div5 {
+.grid-news .div5 {
   grid-area: 2/3/3/4;
 }
 
