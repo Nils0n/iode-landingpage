@@ -1,12 +1,17 @@
+ .bg-omie-grey {
+     background-color: $omie-bg-gray;
+ }
+
+ .bg-omie-secondary {
+    background-color: $omie-bg-secondary;
+ }
+
 .home {
-    background-color: $omie-dark;
     height: 120vh;
     color:$omie-white;
 
     section{
-        background-color: $omie-dark;
         margin-top: -1rem;
-        
     }
     
     button{
@@ -16,10 +21,6 @@
 
 .indications{
     color: $omie-white;
-
-    .about{
-        background-color: $omie-bg-secondary;
-    }
 }
 
 .cards{
@@ -55,12 +56,7 @@
 
         .content-omie-midia{
             top: 12rem;
-            // left: 5rem;
         }
-    }
-
-    .bg-omie-grey{
-        background-color: $omie-bg-gray;
     }
 
     .div1{
@@ -81,30 +77,14 @@
     }
 }
 
-
 .last-session, .cards{
     background-color: $omie-bg-gray;
 }
-
 
 .cards, .experts-word{
     width: 100%;
     height: 100vh;
 }
-
-@media screen and (max-width:768px) {
-
-    .new-item:nth-child(1) {
-            background-image: url('../../../assets/images/banner-omiemidia.png');
-            height: 100vh;
-            color: $omie-white-secondary;
-            
-            .content-omie-midia {
-                    bottom: 0;
-            }
-    }        
-}
-
 
 .grid-news {
     display: grid;
@@ -113,24 +93,100 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
-    
     .div1 {
         grid-area: 1 / 1 / 2 / 2;
     }
-    
+
     .div2 {
         grid-area: 1 / 2 / 2 / 3;
     }
-    
+
     .div3 {
         grid-area: 1 / 3 / 2 / 4;
     }
-    
+
     .div4 {
         grid-area: 2 / 2 / 3 / 3;
     }
-    
+
     .div5 {
         grid-area: 2 / 3 / 3 / 4;
+    }
+}
+
+.grid-indicators {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10rem 10rem 13rem 10rem 10rem 10rem 18rem;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "indice indice destaque"
+        "indice indice destaque"
+        "indice indice diferenca"
+        "iode-pmes segmento diferenca"
+        "iode-pmes segmento acesse"
+        "comparativo segmento acesse"
+        "comparativo arquivo-mensal acesse";
+
+    .indice {
+            grid-area: indice;
+        }
+    
+        .destaque {
+            grid-area: destaque;
+        }
+    
+        .diferenca {
+            grid-area: diferenca;
+        }
+    
+        .acesse {
+            grid-area: acesse;
+            background-color: $omie-bg-light;
+        }
+    
+        .iode-pmes {
+            grid-area: iode-pmes;
+        }
+    
+        .segmento {
+            grid-area: segmento;
+        }
+    
+        .arquivo-mensal {
+            grid-area: arquivo-mensal;
+        }
+    
+        .comparativo {
+            grid-area: comparativo;
+        }
+}
+
+@media screen and (max-width:768px) {
+    .home{
+        height: 120vh;
+    }
+
+    .new-item:nth-child(1) {
+        background-image: url('../../../assets/images/banner-omiemidia.png');
+        height: 100vh;
+        color: $omie-white-secondary;
+            
+        .content-omie-midia {
+                bottom: 0;
+        }
+    }        
+}
+
+@media screen and (min-width:1280px) {
+    .home{
+        height: 100vh;
+    }
+
+    .cards,
+    .experts-word {
+        height: 70vh;
     }
 }
