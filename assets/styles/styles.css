@@ -26,7 +26,8 @@ header a {
 
 footer {
   background-color: #001e27;
-  height: 30vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 footer .links-footer a {
   color: #F7F7F7;
@@ -105,7 +106,7 @@ footer .links-footer a {
   top: 12rem;
 }
 .news .div1 {
-  background-image: url("../../../assets/images/banner-omiemidia.png");
+  background-image: url("../../../assets/images/banner-omiemidia.webp");
   background-size: cover;
 }
 
@@ -186,7 +187,7 @@ footer .links-footer a {
   grid-area: comparativo;
 }
 
-#select-month {
+select.select-month {
   background-color: #00475d;
 }
 
