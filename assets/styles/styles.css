@@ -40,6 +40,28 @@ footer .links-footer a {
   background-color: #00475d;
 }
 
+.omie-blue-header {
+  color: #00e2f4;
+}
+
+.omie-red {
+  color: #FF6565;
+}
+
+.omie-green {
+  color: #69f8cd;
+}
+
+.btn-omie {
+  outline: 1px solid #00e2f4;
+  background-color: #001e27;
+  height: 2rem;
+  transition: transform 0.4s;
+}
+.btn-omie:hover {
+  transform: scale(1.2);
+}
+
 .home {
   height: 120vh;
   color: #ffffff;
@@ -164,12 +186,45 @@ footer .links-footer a {
   grid-area: comparativo;
 }
 
+#select-month {
+  background-color: #00475d;
+}
+
+#segment-mobile {
+  height: 60vh;
+}
+#segment-mobile .carousel-inner .carousel-item {
+  display: none !important;
+}
+#segment-mobile .carousel-inner .carousel-item.active {
+  display: flex !important;
+  width: 15rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.btn-title {
+  background-color: #007A9C;
+}
+
+.transform-scale:hover {
+  animation: transformScale 0.8s infinite alternate;
+}
+
+@keyframes transformScale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
 @media screen and (max-width: 768px) {
   .home {
     height: 120vh;
   }
   .new-item:nth-child(1) {
-    background-image: url("../../../assets/images/banner-omiemidia.png");
+    background-image: url("../../../assets/images/banner-omiemidia.webp");
     height: 100vh;
     color: #F7F7F7;
   }

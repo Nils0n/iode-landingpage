@@ -6,6 +6,28 @@
     background-color: $omie-bg-secondary;
  }
 
+.omie-blue-header {
+    color: $omie-blue-header;
+} 
+
+.omie-red{
+    color:$omie-red
+} 
+.omie-green{
+    color: $omie-green
+} 
+
+.btn-omie{
+    outline: 1px solid $omie-blue-header;
+    background-color: $omie-primary;
+    height: 2rem;
+    transition: transform 0.4s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
 .home {
     height: 120vh;
     color:$omie-white;
@@ -164,13 +186,56 @@
         }
 }
 
+#select-month{
+    background-color: $omie-bg-secondary;
+}
+
+#segment-mobile{
+    height: 60vh;
+
+    .carousel-inner .carousel-item {
+        display: none !important;
+    }
+
+    .carousel-inner .carousel-item.active {
+            display: flex !important;
+            width: 15rem;
+            padding: 0 2rem;
+            justify-content: center;
+    }
+    
+}
+
+.btn-title {
+    background-color: #007A9C;
+}
+
+
+
+
+.transform-scale:hover{
+    animation: transformScale 0.8s infinite alternate;
+    
+}
+
+@keyframes transformScale{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.2);
+    }
+}
+
+
 @media screen and (max-width:768px) {
     .home{
         height: 120vh;
     }
 
     .new-item:nth-child(1) {
-        background-image: url('../../../assets/images/banner-omiemidia.png');
+        background-image: url('../../../assets/images/banner-omiemidia.webp');
         height: 100vh;
         color: $omie-white-secondary;
             
