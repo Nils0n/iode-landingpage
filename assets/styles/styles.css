@@ -193,10 +193,12 @@ footer .links-footer a {
 #segment-mobile {
   height: 60vh;
 }
-#segment-mobile .carousel-inner .carousel-item {
+
+.carouselSegment .carousel-inner .carousel-item {
   display: none !important;
 }
-#segment-mobile .carousel-inner .carousel-item.active {
+
+.carouselSegment .carousel-inner .carousel-item.active {
   display: flex !important;
   width: 15rem;
   padding: 0 2rem;

@@ -192,18 +192,17 @@
 
 #segment-mobile{
     height: 60vh;
+}
+ 
+.carouselSegment .carousel-inner .carousel-item {
+    display: none !important;
+}
 
-    .carousel-inner .carousel-item {
-        display: none !important;
-    }
-
-    .carousel-inner .carousel-item.active {
-            display: flex !important;
-            width: 15rem;
-            padding: 0 2rem;
-            justify-content: center;
-    }
-    
+.carouselSegment .carousel-inner .carousel-item.active {
+    display: flex !important;
+    width: 15rem;
+    padding: 0 2rem;
+    justify-content: center;
 }
 
 .btn-title {
